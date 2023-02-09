@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./SCSS/style.scss:./CSS/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zarconos/OhMyFood_App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zarconos/OhMyFood_App/issues"
+  },
+  "homepage": "https://github.com/Zarconos/OhMyFood_App#readme"
+}
