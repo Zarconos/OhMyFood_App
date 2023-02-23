@@ -1,0 +1,114 @@
+.header__logo-shadow {
+    a {
+      align-items: center;
+      cursor: pointer;
+      display: flex;
+      font-size: 25px;
+      justify-content: center;
+      left: 20px;
+      position: absolute;
+      top: 25px;
+    }
+  }
+  
+  .Section1_Conteneur {
+    .Title_Section_1 {
+      &.Title_Section_1 {
+        h2 {
+          color: #000;
+          font-family: Shrikhand, cursive;
+          font-size: 25px;
+          font-weight: 700;
+          margin: 0px 0px 0px 0px;
+        }
+      }
+    }
+  }
+  
+  .Section1_Conteneur {
+    background-color: #f6f6f6;
+    border-radius: 35px 35px 0 0;
+    margin-top: -60px;
+    position: relative;
+    .Title_Section_1 {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 40px 20px 20px;
+    }
+  }
+  .img_menu1 {
+    height: 37vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+  }
+  .Section1_a_Conteneur {
+    .Listes_Section1 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 95%;
+      margin-bottom: 30px;
+      .menu_plats {
+        border-bottom: 4px solid #99e2d0;
+        color: #000;
+        font-size: 20px;
+        font-weight: 400;
+        margin: 10px 0px 0px 10px;
+        width: 15%;
+      }
+    }
+  }
+  .Title_Section_1 {
+    i {
+      cursor: pointer;
+      font-size: 30px;
+      position: absolute;
+      right: 30px;
+    }
+  }
+  .background_menu {
+    background-color: #fff;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0.5px 2.5px 10px #c9c9c9;
+    cursor: pointer;
+    display: flex;
+    margin-left: 10px;
+    width: 100%;
+    .__detail {
+      padding: 2px 10px;
+      width: 100%;
+    }
+    .__detail_text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    p {
+      align-items: flex-end;
+      display: flex;
+      justify-content: space-between;
+      margin: -20px 15px 10px 0px;
+    }
+  }
+  h4 {
+    display: flex;
+  }
+  .Menu__Commander {
+    .Menu__btn {
+      background-image: linear-gradient(#9356dc, #ff79da);
+      border: none;
+      border-radius: 30px;
+      box-shadow: 2px 1px 7px -3px #000;
+      color: #f6f6f6;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 45px;
+      padding: 10px 20px;
+      transition: 0.2s;
+    }
+  }
+  

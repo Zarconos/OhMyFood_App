@@ -1,11 +1,155 @@
 @import "https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500;600;800&family=Raleway&family=Shrikhand&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500;600;800&family=Raleway&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap";
+.header__logo-shadow a {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+  left: 20px;
+  position: absolute;
+  top: 25px;
+}
+
+.Section1_Conteneur .Title_Section_1.Title_Section_1 h2 {
+  color: #000;
+  font-family: Shrikhand, cursive;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0px 0px 0px 0px;
+}
+
+.Section1_Conteneur {
+  background-color: #f6f6f6;
+  border-radius: 35px 35px 0 0;
+  margin-top: -60px;
+  position: relative;
+}
+.Section1_Conteneur .Title_Section_1 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 20px 20px;
+}
+
+.img_menu1 {
+  height: 37vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+
+.Section1_a_Conteneur .Listes_Section1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 95%;
+  margin-bottom: 30px;
+}
+.Section1_a_Conteneur .Listes_Section1 .menu_plats {
+  border-bottom: 4px solid #99e2d0;
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 0px 0px 10px;
+  width: 15%;
+}
+
+.Title_Section_1 i {
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  right: 30px;
+}
+
+.background_menu {
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0.5px 2.5px 10px #c9c9c9;
+  cursor: pointer;
+  display: flex;
+  margin-left: 10px;
+  width: 100%;
+}
+.background_menu .__detail {
+  padding: 2px 10px;
+  width: 100%;
+}
+.background_menu .__detail_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.background_menu p {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  margin: -20px 15px 10px 0px;
+}
+
+h4 {
+  display: flex;
+}
+
+.Menu__Commander .Menu__btn {
+  background-image: linear-gradient(#9356dc, #ff79da);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 2px 1px 7px -3px #000;
+  color: #f6f6f6;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 45px;
+  padding: 10px 20px;
+  transition: 0.2s;
+}
+
+.footer {
+  background-color: #363636;
+  color: white;
+  width: 100%;
+}
+.footer .footer__subtitle {
+  font-family: Shrikhand, sans-serif;
+  margin: 20px;
+}
+.footer .link {
+  color: white;
+  text-decoration: none;
+}
+.footer .link:hover {
+  text-decoration: underline;
+}
+.footer .footer__icon {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+.footer .footer__icon p {
+  margin: 0;
+}
+.footer .footer__icon p i {
+  margin-right: 5px;
+}
+.footer .Footer__mail {
+  color: white;
+}
+.footer .Footer__mail p {
+  margin: 20px;
+}
+.footer .Footer__mail:hover {
+  text-decoration: underline;
+}
+
 body {
   display: flex;
   flex-direction: column;
   font-family: Roboto, sans-serif;
+  margin: 0px;
 }
-body header {
+body .header {
   width: 100%;
   text-align: center;
   margin: 5px auto;
@@ -31,6 +175,9 @@ body h2 {
 .menu {
   background-color: #f7f7f7;
 }
+.menu .menu__title {
+  margin-top: 40px;
+}
 .menu .menu__button {
   background-image: linear-gradient(#9356dc, #ff79da);
   border: none;
@@ -40,19 +187,41 @@ body h2 {
   color: #f6f6f6;
   cursor: pointer;
   padding: 10px 20px;
-  margin: 20px;
+  margin: 20px 0px 60px 0px;
 }
 
 .header__logo {
   width: 10rem;
+  margin: 20px 0px 5px 0px;
+  font-weight: 800;
+}
+
+#attr::before {
+  align-items: center;
+  background: #9256dc;
+  border-radius: 30px;
+  color: #f6f6f6;
+  display: flex;
+  counter-increment: section;
+  content: counter(section) "";
+  font-size: 18px;
+  font-weight: 500;
+  height: 40%;
+  justify-content: center;
+  left: -15px;
+  margin-right: 50px;
+  position: absolute;
+  width: 9%;
 }
 
 .rules__functions-list {
   display: inline-flex;
   flex-direction: column;
+  counter-reset: section;
   padding: 0 20px;
   gap: 20px;
   list-style-type: none;
+  margin: 0px 0px 60px 0px;
 }
 .rules__functions-list .rules__function-item {
   background-color: #f6f6f6;
@@ -64,6 +233,9 @@ body h2 {
   padding: 25px;
   position: relative;
 }
+.rules__functions-list .rules__function-item:hover {
+  background-color: #f5edfe;
+}
 .rules__functions-list .rules__function-item a {
   text-decoration: none;
   color: black;
@@ -74,24 +246,6 @@ body h2 {
   margin-right: 10px;
 }
 
-.rules__function-item::before {
-  align-items: center;
-  background: #9256dc;
-  border-radius: 30px;
-  color: #f6f6f6;
-  display: flex;
-  content: counter(rules-counter);
-  counter-increment: rules-counter;
-  font-size: 18px;
-  font-weight: 500;
-  height: 40%;
-  justify-content: center;
-  left: -15px;
-  margin-right: 50px;
-  position: absolute;
-  width: 9%;
-}
-
 .restaurants {
   background-color: #f2f2f2;
   border-radius: 0px;
@@ -99,6 +253,9 @@ body h2 {
   flex-direction: column;
   width: 100%;
   text-align: left !important;
+}
+.restaurants .restaurants__title {
+  margin: 60px 0px 0px 20px;
 }
 .restaurants .restaurant_cards {
   display: flex;
@@ -128,8 +285,12 @@ body h2 {
 .restaurants .card-title-bold {
   margin: 0px 0px 10px 20px;
 }
+.restaurants .restaurants__card-title {
+  margin: 10px 0px 15px 0px;
+}
 .restaurants .card-location {
   margin: -10px 0px 0px 20px;
+  padding: 0px 0px 15px 0px;
 }
 .restaurants #restaurant h2 {
   font-weight: 700;
@@ -179,43 +340,6 @@ a {
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.footer {
-  background-color: #363636;
-  color: white;
-  width: 100%;
-}
-.footer .footer__subtitle {
-  font-family: Shrikhand, sans-serif;
-  margin: 20px;
-}
-.footer .link {
-  color: white;
-  text-decoration: none;
-}
-.footer .link:hover {
-  text-decoration: underline;
-}
-.footer .footer__icon {
-  display: flex;
-  align-items: center;
-  margin: 20px;
-}
-.footer .footer__icon p {
-  margin: 0;
-}
-.footer .footer__icon p i {
-  margin-right: 5px;
-}
-.footer .Footer__mail {
-  color: white;
-}
-.footer .Footer__mail p {
-  margin: 20px;
-}
-.footer .Footer__mail:hover {
-  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
