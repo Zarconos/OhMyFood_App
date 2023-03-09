@@ -122,6 +122,7 @@ body {
   flex-direction: column;
   width: 100%;
   text-align: left !important;
+  margin-bottom: -20px;
   .restaurants__title {
     margin: 60px 0px 0px 20px;
   }
@@ -319,6 +320,11 @@ ul{
   flex-wrap: wrap;
   flex-direction: row;
   align-content: center;
+}
+
+
+.rules__functions-list {
+  display: flex;
   justify-content: space-evenly;
 }
 
@@ -332,4 +338,15 @@ ul{
   position: relative;
   box-shadow: 2px 2px 5px #818181;
   width: 300px;
-}}
+}
+.footer__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer .footer__subtitle {
+  padding-top: 20px;
+}
+}
