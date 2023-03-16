@@ -104,7 +104,8 @@
   .background_menu {
 
     .__detail {
-      padding: 2px 10px;
+      padding: 2px 0px;
+      margin-right: -200px;
       width: 100%;
     }
     .__detail_text {
@@ -146,7 +147,7 @@
   .__check{
     visibility: hidden; 
     transform: translateX(100px);
-
+    width: 0;
   }
 
 
@@ -180,13 +181,6 @@
   .__detail{
       width: 100%;
   }
-
-  .__detail_text{
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-  }
-
 
   
 
