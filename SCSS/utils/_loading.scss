@@ -1,0 +1,49 @@
+@mixin spinner-blocks {
+    display: flex;
+    
+    .block {
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      border-radius: 50%;
+      animation: bounce 1s ease-in-out infinite;
+    }
+  
+    .block-1 {
+      background-color: #9356DC;
+      animation-delay: -0.32s;
+    }
+  
+    .block-2 {
+      background-color: $secondary-color;
+      animation-delay: -0.16s;
+    }
+  
+    .block-3 {
+      background-color: $animation-color;
+    }
+  
+    @keyframes bounce {
+      0%, 80%, 100% {
+        transform: scale(0);
+      }
+      40% {
+        transform: scale(1);
+      }
+    }
+  }
+
+  @mixin loading-background {
+    background-color: white;
+    animation: fade-in 3s linear forwards;
+    
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+  

@@ -4,6 +4,8 @@
 @import "_Menu.scss";
 @import "_footer.scss";
 @import "animations.scss";
+@import "utils/variables";
+@import "utils/loading";
 
 body {
   display: flex;
@@ -37,22 +39,22 @@ body {
   margin: 0px 0px 20px 0px;
 }
 .menu {
-  background-color: #f7f7f7;
+  background-color: $background-color-light;
   .menu__title {
     margin-top: 40px;
   }
   .menu__button {
-    background-image: linear-gradient(#9356dc, #ff79da);
+    background-image: linear-gradient($primary-color, $secondary-color);
     border: none;
     height: 45px;
     border-radius: 30px;
-    box-shadow: 2px 1px 7px -3px #000;
+    box-shadow: 2px 1px 7px -3px $dark;
     color: #f6f6f6;
     cursor: pointer;
     padding: 10px 20px;
     margin: 20px 0px 60px 0px;
   &:hover{
-    background-image: linear-gradient(#ff79da, #9356dc);
+    background-image: linear-gradient($secondary-color, $primary-color);
   }
   }
 }
@@ -90,7 +92,7 @@ body {
   .rules__function-item {
     background-color: #f6f6f6;
     border-radius: 20px;
-    box-shadow: 3px 2px 5px #818181;
+    box-shadow: 3px 2px 5px $shadow-color;
     cursor: pointer;
     font-size: 20px;
     opacity: 1;
@@ -98,7 +100,7 @@ body {
     position: relative;
 
     &:hover {
-      background-color: #f5edfe;
+      background-color: $hover-color;
     }
     &:hover i{
       color: #9256dc;
@@ -108,7 +110,7 @@ body {
       color: black;
     }
     i {
-      color: #818181;
+      color: $shadow-color;
       font-weight: 900;
       margin-right: 10px;
     }
@@ -116,7 +118,7 @@ body {
 }
 
 .restaurants {
-  background-color: #f2f2f2;
+  background-color: $background-color-dark;
   border-radius: 0px;
   display: inline-flex;
   flex-direction: column;
@@ -132,7 +134,7 @@ body {
     right: 20px;
     top: 80%;
     color: transparent;
-    background: linear-gradient(#9356DC,#FF79DA);
+    background: linear-gradient(#9356DC,$secondary-color);
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0;
@@ -169,7 +171,7 @@ body {
     margin-left: 15px;
     margin-right: 15px;
     position: relative;
-    box-shadow: 2px 2px 5px #818181;
+    box-shadow: 2px 2px 5px $shadow-color;
   }
 
   .card-title-bold {
@@ -204,7 +206,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: $dark;
 }
 
 .card-new {
@@ -243,70 +245,19 @@ a {
   }
 }
 
-.loading-background{
-  background-color: white;
-  animation: fade-in 3s linear forwards;
-}
-
 .loading-spinner {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
+  @include spinner-blocks;
 }
 
-.spinner-blocks {
-  display: flex;
+.loading-background {
+  @include loading-background;
 }
 
-.block {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  border-radius: 50%;
-  animation: bounce 1s ease-in-out infinite;
-}
-
-.block-1 {
-  background-color: #9356DC;
-  animation-delay: -0.32s;
-}
-
-.block-2 {
-  background-color: #FF79DA;
-  animation-delay: -0.16s;
-}
-
-.block-3 {
-  background-color: #99E2D0;
-}
-
-@keyframes bounce {
-  0%, 80%, 100% {
-    transform: scale(0);
-  }
-  40% {
-    transform: scale(1);
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 
 @media only screen and (min-width: 788px){
 
@@ -336,7 +287,7 @@ ul{
   margin-left: 15px;
   margin-right: 15px;
   position: relative;
-  box-shadow: 2px 2px 5px #818181;
+  box-shadow: 2px 2px 5px $shadow-color;
   width: 300px;
 }
 .footer__container{

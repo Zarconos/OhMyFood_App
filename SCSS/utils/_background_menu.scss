@@ -1,0 +1,85 @@
+@mixin background-menu-animation() {
+    @keyframes apparition {
+      0% {
+        transform: translateY(5%);
+        opacity: 0%; 
+      }
+      100%{
+         transform: translateY(0%);
+         opacity: 100%;
+      }
+    } 
+  
+    @keyframes rotate {
+      0% {
+        transform: rotate(180deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  
+    .__check {
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      align-items: center;
+      width: 20%;
+      background-color: $animation-color;
+      position: relative;
+      visibility: hidden;
+      transform: translateX(100%);
+      border-radius: 0 15px 15px 0;
+      transition: transform 0.5s ease-in-out;
+      animation-fill-mode: forwards;
+  
+      animation-duration: 1s;
+      animation-name: rotate;
+      color: white;
+      font-size: 20px;
+      border-radius: 50%;
+    }
+    
+    .background_menu {
+      background-color: white;
+      border-radius: 15px 15px 15px 15px;
+      margin-left: 10px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+      justify-content: space-between;
+      transform: translateY(5%);
+      opacity: 0;
+      transition: all .5s ease-in-out;
+      animation: apparition 0.5s ease-in-out 0.2s forwards; 
+  
+      .__detail{
+        width: 100%;
+      }
+  
+      .__detail_text{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+  
+      &:hover {
+        .Section1_zoom {
+          transform: scale(1.02);
+        }
+  
+        .__detail {
+          width: 80%;
+          opacity: 1;
+        }
+  
+        .__check {
+          visibility: visible;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+  
