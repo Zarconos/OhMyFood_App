@@ -106,6 +106,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    margin: 0px 0px 7px 14px;
   }
   p {
     align-items: flex-end;
@@ -119,7 +120,7 @@
 }
 h4 {
   display: flex;
-  margin: 10px 0px 25px 1px;
+  margin: 10px 0px 23px 14px;
 }
 .Menu__Commander {
   .Menu__btn {
@@ -178,7 +179,7 @@ h4 {
 
   &:hover {
     .Section1_zoom {
-      transform: scale(1.02);
+      transform: scale(1.0);
     }
 
     .__detail {
@@ -264,6 +265,9 @@ h4 {
   transform: translateX(0);
   position: absolute;
   left: 90%;
+    strong{
+      margin: -8px 0px 0px 0px;
+    }
 }
 
 .background_menu:hover .__price {

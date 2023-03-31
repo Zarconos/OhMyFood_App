@@ -75,7 +75,7 @@ body {
 }
 
 .rules__functions-list {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   counter-reset: section;
   padding: 0 20px;

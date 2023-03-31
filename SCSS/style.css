@@ -95,7 +95,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin: 0px 0px 7px 14px;
 }
 .background_menu p {
   align-items: flex-end;
@@ -109,7 +108,7 @@
 
 h4 {
   display: flex;
-  margin: 10px 0px 23px 14px;
+  margin: 10px 0px 25px 1px;
 }
 
 .Menu__Commander .Menu__btn {
@@ -250,9 +249,6 @@ h4 {
   transform: translateX(0);
   position: absolute;
   left: 90%;
-}
-.__price strong {
-  margin: -8px 0px 0px 0px;
 }
 
 .background_menu:hover .__price {
@@ -421,7 +417,7 @@ body h2 {
 }
 
 .rules__functions-list {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   counter-reset: section;
   padding: 0 20px;
@@ -493,7 +489,8 @@ body h2 {
   text-align: left;
 }
 .restaurants .card-image {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 200px;
@@ -693,6 +690,4 @@ a {
   .footer .footer__subtitle {
     padding-top: 20px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
